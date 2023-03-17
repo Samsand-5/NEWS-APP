@@ -41,7 +41,11 @@ public class NewsRVAdapter extends RecyclerView.Adapter<NewsRVAdapter.ViewHolder
             public void onClick(View view) {
                 Intent i=new Intent(context,NewsDeatilActivity.class);
                 i.putExtra("title",articles.getTitle());
-
+                i.putExtra("content",articles.getContent());
+                i.putExtra("desc",articles.getDescription());
+                i.putExtra("image",articles.getUrlToImage());
+                i.putExtra("url",articles.getUrl());
+                context.startActivity(i);
             }
         });
     }
