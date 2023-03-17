@@ -35,7 +35,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/idRVCatagories"
+        android:id="@+id/idRVCategories"
+        tools:listitem="@layout/catagories_rv_item"
         android:orientation="horizontal"
         android:layout_below="@id/idToolbar"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
@@ -44,7 +45,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/idRVCatagories"
+        android:layout_below="@id/idRVCategories"
+        tools:listitem="@layout/news_rv_item"
         android:id="@+id/idRVNews"
         android:layout_marginTop="5dp"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
