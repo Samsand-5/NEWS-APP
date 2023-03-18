@@ -1,10 +1,10 @@
 package com.example.dailynews;
 
-public class CategoriesRVModal {
+public class CategoryRVModal {
     private String category;
     private String categoryImageUrl;
 
-    public CategoriesRVModal(String category, String categoryImageUrl) {
+    public CategoryRVModal(String category, String categoryImageUrl) {
         this.category = category;
         this.categoryImageUrl = categoryImageUrl;
     }
