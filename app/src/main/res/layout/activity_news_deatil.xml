@@ -18,7 +18,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbar">
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/idBtnReadNews">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -59,6 +60,31 @@
                 android:textColor="@color/white"
                 android:id="@+id/idTVSubDesc"
                 android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idTVSubDesc"
+                android:id="@+id/idTVContent"
+                android:text="CONTENT"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="READ FULL NEWS"
+        android:background="@color/yellow"
+        app:backgroundTint="@color/yellow"
+        android:textAllCaps="false"
+        android:id="@+id/idBtnReadNews"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        />
 
 
         </RelativeLayout>
