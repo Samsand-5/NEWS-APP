@@ -18,12 +18,12 @@ import java.util.ArrayList;
 public class CategoryRVAdapter extends RecyclerView.Adapter<CategoryRVAdapter.ViewHolder> {
  private ArrayList<CategoryRVModal>categoryRVModals;
  private Context context;
- private CategoryClickInterface CategoryClickInterface;
+ private categoryClickInterface categoryClickInterface;
 
-    public CategoryRVAdapter(ArrayList<CategoryRVModal> categoryRVModals, Context context, CategoryRVAdapter.CategoryClickInterface categoryClickInterface) {
+    public CategoryRVAdapter(ArrayList<CategoryRVModal> categoryRVModals, Context context, CategoryRVAdapter.categoryClickInterface categoryClickInterface) {
         this.categoryRVModals = categoryRVModals;
         this.context = context;
-        CategoryClickInterface = categoryClickInterface;
+        this.categoryClickInterface = categoryClickInterface;
     }
 
     @NonNull
@@ -41,7 +41,7 @@ public class CategoryRVAdapter extends RecyclerView.Adapter<CategoryRVAdapter.Vi
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CategoryClickInterface.onCategoryClick(position);
+                categoryClickInterface.onCategoryClick(position);
             }
         });
     }
@@ -50,7 +50,7 @@ public class CategoryRVAdapter extends RecyclerView.Adapter<CategoryRVAdapter.Vi
     public int getItemCount() {
         return categoryRVModals.size();
     }
-    public interface CategoryClickInterface{
+    public interface categoryClickInterface{
         void onCategoryClick(int position);
     }
 

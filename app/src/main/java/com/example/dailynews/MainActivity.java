@@ -17,7 +17,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class MainActivity extends AppCompatActivity implements CategoryRVAdapter.CategoryClickInterface {
+public class MainActivity extends AppCompatActivity implements CategoryRVAdapter.categoryClickInterface {
 
     //api key-b3a51abb898d41ac8584930d4f30928e
 
