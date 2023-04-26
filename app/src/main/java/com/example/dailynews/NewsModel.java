@@ -7,6 +7,12 @@ public class NewsModel {
     private String status;
     private ArrayList<Articles> articles;
 
+    public NewsModel(int totalResults, String status, ArrayList<Articles> articles) {
+        this.totalResults = totalResults;
+        this.status = status;
+        this.articles = articles;
+    }
+
     public int getTotalResults() {
         return totalResults;
     }

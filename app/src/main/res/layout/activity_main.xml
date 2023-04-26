@@ -59,9 +59,4 @@
         android:id="@+id/idPBLoading"
         android:visibility="gone"
         />
-
-
-
-
-    
         </RelativeLayout>

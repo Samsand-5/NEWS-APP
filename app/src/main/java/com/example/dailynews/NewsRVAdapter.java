@@ -35,6 +35,7 @@ public class NewsRVAdapter extends RecyclerView.Adapter<NewsRVAdapter.ViewHolder
     public void onBindViewHolder(@NonNull NewsRVAdapter.ViewHolder holder, int position) {
         Articles articles=articlesArrayList.get(position);
         holder.subTitleTV.setText(articles.getDescription());
+        holder.titleTV.setText(articles.getTitle());
         Picasso.get().load(articles.getUrlToImage()).into(holder.newsIV);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
