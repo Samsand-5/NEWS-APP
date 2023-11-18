@@ -48,6 +48,7 @@ public class CategoryRVAdapter extends RecyclerView.Adapter<CategoryRVAdapter.Vi
 
     @Override
     public int getItemCount() {
+
         return categoryRVModals.size();
     }
     public interface categoryClickInterface{
